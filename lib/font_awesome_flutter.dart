@@ -74,7 +74,9 @@ enum ProFontAwesomeIcon  {
   arrowProgress,
   arrowRight,
   hexagonExclamation,
-  circleLocationArrow
+  circleLocationArrow,
+  road,
+  eraser
 }
 
 const Map<ProFontAwesomeIcon, String> icons = {
@@ -106,5 +108,7 @@ const Map<ProFontAwesomeIcon, String> icons = {
   ProFontAwesomeIcon.arrowRight: "\uf061",
   ProFontAwesomeIcon.hexagonExclamation: "\ue417",
   ProFontAwesomeIcon.circleLocationArrow: "\uf602",
+  ProFontAwesomeIcon.road: "\uf018",
+  ProFontAwesomeIcon.eraser: "\uf12d",
 };
 

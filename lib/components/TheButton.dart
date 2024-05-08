@@ -93,7 +93,7 @@ class _TheButtonState extends State<TheButton> {
         case TheButtonSize.s:
           return const EdgeInsets.symmetric(horizontal: 18.0, vertical: 8);
         case TheButtonSize.l:
-          return const EdgeInsets.symmetric(horizontal: 26.0, vertical: 23);
+          return const EdgeInsets.symmetric(horizontal: 20.0, vertical: 9);
         case TheButtonSize.xl:
           return const EdgeInsets.symmetric(horizontal: 30.0, vertical: 26);
         case TheButtonSize.md:
@@ -174,7 +174,7 @@ class _TheButtonState extends State<TheButton> {
           padding: MaterialStateProperty.all<EdgeInsetsGeometry>(getTheButtonSize()),
           backgroundColor: null,
           overlayColor: null,
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: const BorderRadius.all(Radius.circular(4)))),
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(4)))),
           side: MaterialStateProperty.all<BorderSide>(
               BorderSide(
                   width: 1,
@@ -224,7 +224,7 @@ class _TheButtonState extends State<TheButton> {
           backgroundColor: MaterialStateProperty.all<Color>(widget.onPressed != null ? getTheButtonColor() : Colors.grey),
           overlayColor: MaterialStateProperty.all<Color>(getOnTheButtonColor().withOpacity(0.2)),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(12)),
+            borderRadius: BorderRadius.all(Radius.circular(4)),
           )),
           elevation: MaterialStateProperty.all<double>(0),
         ),

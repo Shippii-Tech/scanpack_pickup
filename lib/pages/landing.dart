@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'package:scanpack_pickup/components/FansyButton.dart';
-import 'package:scanpack_pickup/components/TheButton.dart';
+import 'package:scanpack_pickup/components/FancyButton.dart';
 import 'package:scanpack_pickup/font_awesome_flutter.dart';
 import 'package:scanpack_pickup/layouts/MainLayout.dart';
 import 'package:scanpack_pickup/services/pickup/pickup.dart';
@@ -134,7 +133,7 @@ class _LandingState extends State<Landing>{
                               size: 60,
                               weight: ProFontAwesomeWeight.Light,
                             ),
-                            const Text('No pickups available!'),
+                            const Text('No pickups available!f'),
                           ],
                         );
                       }

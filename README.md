@@ -17,5 +17,5 @@ samples, guidance on mobile development, and a full API reference.
 ## Getting Started
 flutter pub add
 
-## compile .env
+## compile
 dart run build_runner build

@@ -39,6 +39,8 @@ class UsePickup extends Store {
     notifyListeners();
     return result;
   }
+
+
 }
 
 @JsonSerializable()

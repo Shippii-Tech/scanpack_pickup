@@ -58,7 +58,7 @@ class Store extends ChangeNotifier {
     }
   }
 
-  Future<Response<T>> send<T>(String url, Map<String, dynamic> data) async {
+  Future<Response<T>> send<T>(String url, dynamic data) async {
     loading = true;
 
     try {

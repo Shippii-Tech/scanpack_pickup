@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:scanpack_pickup/router.dart';
 import 'package:scanpack_pickup/services/pickup/pickup.dart';
 import 'package:scanpack_pickup/services/session/session.dart';
 import 'package:scanpack_pickup/services/store.dart';
-import 'pages/landing.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
 
   runApp(
       MultiProvider(
